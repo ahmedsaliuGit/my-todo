@@ -13,11 +13,18 @@ function App() {
     setItems(newItems);
   };
 
+  const handleClick = (index) => {
+    const newItems = items.slice();
+    newItems[index].complete = !newItems[index].complete;
+
+    setItems(newItems);
+  };
+
   return (
     <div className="App">
       <div className="App-container">
         <TodoHeader onAddTodo={(item) => addTodo(item)} />
-        <TodoList items={items} />
+        <TodoList items={items} onClick={(index) => handleClick(index)} />
       </div>
     </div>
   );

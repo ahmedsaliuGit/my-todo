@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todo Component 1`] = `
+<li>
+  <span
+    className="todo-item"
+  >
+    Some Todo
+  </span>
+  <span
+    className="todo-item-complete"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "red",
+        "color": "white",
+      }
+    }
+  >
+    Not complete
+  </span>
+</li>
+`;

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import "./components.css";
 import { limitText } from "../helpers";
@@ -23,6 +24,11 @@ const Todo = (props) => {
       </li>
     </>
   );
+};
+
+Todo.propTypes = {
+  item: PropTypes.object.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default Todo;
